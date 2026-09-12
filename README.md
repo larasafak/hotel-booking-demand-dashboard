@@ -71,11 +71,9 @@ Potential revenue at risk should not be interpreted as confirmed lost revenue. I
 ```text
 hotel-booking-demand-dashboard/
 ├── README.md
-├── hotel_booking_dashboard.twbx
-├── dashboard_preview.png              # recommended
-└── data/                              # optional
-    ├── hotel_bookings_raw_data.csv
-    └── hotel_bookings_clean_data.csv
+├── hotel_booking_dashboard.twbx  
+├── hotel_bookings_raw_data.csv
+└── hotel_bookings_clean_data.csv
 ```
 
 The packaged Tableau workbook already contains the cleaned data. The separate CSV files are therefore optional and should only be included when readers need to inspect the data preparation.

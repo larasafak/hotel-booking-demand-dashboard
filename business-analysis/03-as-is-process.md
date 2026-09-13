@@ -70,7 +70,7 @@ These findings help prioritise discovery questions, but they do not confirm why 
 
 The dataset does not establish:
 
-- When each cancellation occurred relative to the arrival date.
+- Whether reservation_status_date consistently represents the operational cancellation timestamp and whether confirmation or reminder activity occurred before cancellation.
 - Whether a customer received or responded to a confirmation reminder.
 - Whether deposits or cancellation charges were collected.
 - Whether cancelled rooms were subsequently resold.

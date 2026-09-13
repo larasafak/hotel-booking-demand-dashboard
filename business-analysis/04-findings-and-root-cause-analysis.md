@@ -19,7 +19,7 @@ The analysis indicates that cancellation behaviour differed substantially across
 | DF03 | Bookings made more than 180 days before arrival had a 57.01% cancellation rate | Long booking horizons may create greater uncertainty and may justify additional confirmation activity | That reminders or deposits would necessarily prevent these cancellations |
 | DF04 | Bookings made within seven days of arrival had a 9.63% cancellation rate | Short-lead bookings were historically more likely to proceed | That all short-lead bookings should be treated as low risk |
 | DF05 | Group bookings had a 61.06% cancellation rate | Group-booking processes and terms should be investigated | That group size itself caused cancellation |
-| DF06 | Direct bookings had a 15.34% cancellation rate | Direct customer relationships may provide stronger engagement or different booking conditions | That shifting all customers to direct channels would reproduce this outcome |
+| DF06 | Bookings classified under the Direct market segment had a cancellation rate of 15.34%. | Direct customer relationships may provide stronger engagement or different booking conditions | That shifting all customers to direct channels would reproduce this outcome |
 | DF07 | Bookings with no special requests had a 47.72% cancellation rate | Customer engagement indicators may help prioritise follow-up | That creating a special request would reduce cancellation |
 | DF08 | Potential booking value at risk was estimated at 16.73 million currency units | Cancellation analysis should consider booking value as well as cancellation frequency | That 16.73 million represents confirmed lost revenue |
 

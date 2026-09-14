@@ -94,6 +94,7 @@ hotel-booking-demand-dashboard/
     ├── 07-user-stories-and-acceptance-criteria.md
     ├── 08-kpis-risks-and-implementation.md
     └── 09-uat-plan.md
+```
 
 The packaged Tableau workbook already contains the cleaned data. The separate CSV files are therefore optional and should only be included when readers need to inspect the data preparation.
 

@@ -1,10 +1,14 @@
-# Hotel Booking Demand and Cancellation Dashboard
+# Hotel Booking Dashboard and Business Analysis Case Study
 
 ## Overview
 
 This project uses Tableau to analyse 119,390 bookings from a city hotel and a resort hotel in Portugal. The dashboard examines booking demand, cancellation behaviour, potential revenue exposure, and the customer and booking characteristics associated with higher cancellation rates.
 
 The analysis is organised as a five-part decision story: the business situation, demand patterns, cancellation risk, estimated financial exposure, and recommended actions for hotel managers.
+
+The project also includes an independent [business analysis portfolio case study](business-analysis/README.md). This extension uses the verified dashboard findings to demonstrate problem definition, stakeholder analysis, current-state and future-state process mapping, root-cause analysis, requirements engineering, user stories, prioritisation, implementation planning and UAT design.
+
+The numerical findings are derived from the historical dataset. The operational processes, stakeholder needs, requirements and proposed solution are simulated for portfolio purposes and have not been validated or implemented by the hotels represented in the data.
 
 ## Business Questions
 
@@ -29,7 +33,7 @@ The analysis is organised as a five-part decision story: the business situation,
 - The overall cancellation rate was **37.04%**.
 - The City Hotel had a higher cancellation rate than the Resort Hotel: **41.73% compared with 27.76%**.
 - Cancellation risk increased with lead time. Bookings made more than 180 days in advance had a **57.01%** cancellation rate, compared with **9.63%** for bookings made within seven days of arrival.
-- Group bookings had a cancellation rate of **61.06%**, while direct bookings had a rate of **15.34%**.
+- - Bookings in the **Groups market segment** had a cancellation rate of **61.06%**, while bookings in the **Direct market segment** had a rate of **15.34%**.
 - Bookings with no special requests had a **47.72%** cancellation rate. Bookings with one or more requests had substantially lower rates.
 - The dashboard estimates **16.73 million** in potential booking value at risk and **26.00 million** in realised booking value, measured in the dataset's currency units.
 
@@ -37,11 +41,16 @@ These results describe patterns in the historical data and should not be interpr
 
 ## Business Recommendations
 
-1. Apply stricter confirmation or deposit policies to bookings with long lead times, particularly those made more than 180 days before arrival.
-2. Review group-booking terms because this segment combines meaningful booking volume with the highest major-segment cancellation rate.
-3. Monitor City Hotel bookings more closely because their cancellation rate is approximately 14 percentage points higher than the Resort Hotel rate.
-4. Use special requests and booking engagement as supporting indicators when prioritising reservations for follow-up.
-5. Track potential revenue exposure alongside cancellation rates so that operational attention reflects both probability and booking value.
+The following recommendations are based on historical associations and should be validated through stakeholder research and a controlled pilot:
+
+1. Evaluate additional confirmation checkpoints for long-lead-time bookings, particularly those made more than 180 days before arrival.
+2. Review the group-booking process and terms because the Groups market segment combines meaningful booking volume with a high historical cancellation rate.
+3. Investigate why City Hotel bookings had a cancellation rate approximately 14 percentage points higher than Resort Hotel bookings before introducing hotel-specific controls.
+4. Test whether booking-engagement indicators, including special requests, can support staff prioritisation without being treated as causal drivers.
+5. Monitor potential booking-value exposure alongside cancellation rates, while keeping the measure clearly labelled as a proxy rather than confirmed financial loss.
+6. Validate any proposed deposit or cancellation-policy changes separately because stricter terms could reduce booking conversion or negatively affect customers.
+
+A simulated process-improvement proposal, requirements catalogue and implementation plan are available in the [business analysis portfolio](business-analysis/README.md).
 
 ## Data Preparation
 
@@ -71,10 +80,20 @@ Potential revenue at risk should not be interpreted as confirmed lost revenue. I
 ```text
 hotel-booking-demand-dashboard/
 ├── README.md
-├── hotel_booking_dashboard.twbx  
+├── hotel_booking_dashboard.twbx
 ├── hotel_bookings_raw_data.csv
-└── hotel_bookings_clean_data.csv
-```
+├── hotel_bookings_clean_data.csv
+└── business-analysis/
+    ├── README.md
+    ├── 01-project-brief.md
+    ├── 02-stakeholder-analysis.md
+    ├── 03-as-is-process.md
+    ├── 04-findings-and-root-cause-analysis.md
+    ├── 05-gap-analysis-and-to-be-process.md
+    ├── 06-requirements-catalogue.md
+    ├── 07-user-stories-and-acceptance-criteria.md
+    ├── 08-kpis-risks-and-implementation.md
+    └── 09-uat-plan.md
 
 The packaged Tableau workbook already contains the cleaned data. The separate CSV files are therefore optional and should only be included when readers need to inspect the data preparation.
 
@@ -95,9 +114,11 @@ A Tableau Public link can also be added here after publication.
 - The dashboard identifies associations rather than causal relationships.
 - Revenue measures are proxies rather than audited financial outcomes.
 
-## Tools
+## Tools and Techniques
 
-Tableau, calculated fields, dashboard actions, parameters, filters, data validation, and exploratory data analysis.
+**Data and visualisation:** Tableau, calculated fields, dashboard actions, parameters, filters, data validation and exploratory data analysis.
+
+**Business analysis:** stakeholder analysis, process mapping, root-cause analysis, Five Whys, gap analysis, business and system requirements, MoSCoW prioritisation, user stories, Gherkin acceptance criteria, KPI definition, risk analysis, RACI, UAT planning and requirements traceability.
 
 ## Data Source and Licence
 
